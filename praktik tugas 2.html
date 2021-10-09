@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+    <title>Data Diri</title>
+</head>
+<body>
+    <table border='0' width='60%' cellpadding='2'  cellspacing='2' align='center' bgcolor=white><tr><br></tr>
+    <h2>FORMULIR PENDAFTARAN LOMBA OSN</h2>
+    <form>
+        <center><img src="osn.jpg" width="500px;" height="250px;"></center><br>
+        <tr><td>
+            <label for="name">Nama : </label>
+            <input type="text" id="name" name="name" required placeholder="Nama Lengkap"><br><br>
+        </td></tr>
+
+        <tr><td>
+            <label>Tempat Lahir : </label>
+            <input type="text" required placeholder="Tempat Lahir"><br><br>
+            <label>Tanggal Lahir : </label>
+            <input type="date" required>
+            <br><br>
+        </td></tr>
+
+        <tr><td>
+            <label for="tingkat">Tingkat Lomba : </label>
+            <input type="radio" name="tilom" required>SMP
+            <input type="radio" name="tilom" required>SMA
+        <br><br>
+        </td></tr>
+
+        <tr><td>
+            <label for="sekolah">Asal Sekolah : </label>
+            <select required>
+                <option value="" disabled selected>Pilih Sekolah</option>
+                <option>SMP Islam Athirah 1 Makassar</option>
+                <option>SMK Telkom Makassar</option>
+                <option>MAN Insan Cendekia Serpong</option>
+                <option>MAN Insan Cendekia Gorontalo</option>
+                <option>SMAK Bogor</option>
+                <option>SMPN 22 Surabaya</option>
+                <option>SMPN 19 Palembang</option>
+                <option>SMP Bruder Pontianak</option>
+                <option>SMPN 1 Ternate</option>
+            </select>
+            <br><br>
+        </td></tr>
+        
+        <tr><td>
+            <label for="kelas">Kelas : </label>
+            <select required>
+                <option value="" disabled selected>Pilih Kelas</option>
+                <option>VII</option>
+                <option>VIII</option>
+                <option>IX</option>
+                <option>X</option>
+                <option>XI</option>
+                <option>XII</option>
+            </select>
+            <br><br>
+        </td></tr>
+
+        <tr><td>
+            <label for="nomortelp">Nomor HP/WhatsApp : </label>
+            <input type="text" pattern="[0-9]{8,}" required placeholder="Nomor HP">
+        <br><br>
+        </td></tr>
+
+        <tr><td>
+            <label>Alamat : </label><textarea name="alamat" cols="30" rows="3" required placeholder="Alamat Lengkap"></textarea>
+            <br><br>
+        </td></tr>
+
+        <trd><td>
+            <label>Foto : </label>
+            <input type="file" id="foto" name="foto" style="display: none;" accept="img"
+            onchange="document.getElementById('filename').value=this.value">
+            <input type="text" id="filename" placeholder="Pilih Foto">
+            <input type="button" value="Browse"
+            onclick="document.getElementById('foto').click()">
+        <br><br>
+        </td></trd>
+
+        <tr><td>
+            <input type="submit" value="Next" style="width: 80px; height: 22px;">
+            <input type="submit" style="height: 22px; width: 80px;" onclick="location.href='praktik tugas 2lg.html'" type="button" value="Next">
+            <button style="display: inline-block; width: 80px; height: 22px;" onclick="location.href='praktik tugas 2lg.html'" type="submit">Next</button>
+        </td></tr>
+    </form>
+</body>
